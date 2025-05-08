@@ -55,7 +55,13 @@ def portfolio():
 import os
 print(os.path.abspath(app.template_folder))
 
-
+@app.before_request
+def enforce_https():
+    if request.url.startswith('http://'):
+        url = request.url.replace('http://', 'https://', 1)
+        return redirect(url, code=301)
+    
+    
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
