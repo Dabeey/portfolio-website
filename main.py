@@ -6,8 +6,8 @@ import os
 # Load environment variables
 load_dotenv()
 
-# app = Flask(__name__) 
-app = Flask(__name__, template_folder='templates', static_folder='static')
+app = Flask(__name__) 
+# app = Flask(__name__, template_folder='templates', static_folder='static')
 
 app.template_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
 
@@ -61,7 +61,7 @@ def enforce_https():
         url = request.url.replace('http://', 'https://', 1)
         return redirect(url, code=301)
     
-    
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'POST':
@@ -90,4 +90,4 @@ def contact():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)  
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 10000)))
