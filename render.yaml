@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: your-portfolio
+    name: my-portfolio
     runtime: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn main:app
