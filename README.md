@@ -41,46 +41,31 @@ python -m venv venv
 venv\Scripts\activate
 # On macOS/Linux:
 source venv/bin/activate
-Install dependencies:
 
-bash
+
+# Install dependencies:
 pip install -r requirements.txt
-Set up environment variables:
 
+# Set up environment variables:
 Create a .env file based on .env.example
-
 Add your configuration values
 
-🚀 Running the Application
+# 🚀 Running the Application
 bash
 # Development mode
-python app.py  # or whatever your main file is called
+python app.py  { or whatever your main file is called }
 
-# Production (if applicable)
-gunicorn app:app -w 4 -b 0.0.0.0:8000
-📂 Project Structure
-portfolio-website/
-├── app/                      # Main application folder
-│   ├── static/               # CSS, JS, images
-│   ├── templates/            # HTML templates
-├── .env.example              # Environment variables template
-├── .gitignore                # Git ignore rules
-├── requirements.txt          # Dependencies
-├── main.py                    # Main application file
-└── README.md                 # This file
 
-🌟 Features
+# 🌟 Features
 Responsive Design: Works on all devices
 
 Project Showcase: Filterable project gallery
 
 Contact Form: With email integration
 
-Dark/Light Mode: User preference toggle
-
 Blog Section (if applicable): Markdown-powered blog
 
-🤝 Contributing
+# 🤝 Contributing
 Contributions are welcome! Please follow these steps:
 
 Fork the project
@@ -93,10 +78,10 @@ Push to the branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-📄 License
+# 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-📬 Contact
+# 📬 Contact
 Dabeey - @yourtwitter - abbasdaughter18@gmail.com
 
 Project Link: https://github.com/Dabeey/portfolio-website.git
