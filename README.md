@@ -82,7 +82,7 @@ Open a Pull Request
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 # 📬 Contact
-Dabeey - @yourtwitter - abbasdaughter18@gmail.com
+Dabeey - @dev_dabeey - abbasdaughter18@gmail.com
 
 Project Link: https://github.com/Dabeey/portfolio-website.git
 
